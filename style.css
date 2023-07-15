@@ -1,0 +1,155 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    height: 680px;    
+}
+
+.container {
+    height: 680px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70%;    
+}
+
+.container__caixa {
+    height: 200px;
+    width: 500px;    
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario {    
+    align-items: center;
+    margin: 0 10em;
+    height: 600px;
+}
+
+.secundario__imagem {
+    width: 80%;    
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {    
+    color: var(--cinza-secundario);
+    line-height: 25px;
+    text-align: justify;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivo__titulo {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-weight: 700;
+    font-size: 32px;    
+}
+
+.container__rodape {
+    text-align: center;
+    margin-bottom: 32px;    
+}
+
+.rodape__logo {
+    width: 102px;
+    height: 35.28px;
+}
+
+.rodape__links {
+    display: flex; 
+    margin-top: 32px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.lista__rodape__item {
+    list-style: none;
+    font-size: 16px;
+}
+
+.rodape__texto {
+    margin-top: 32px;    
+    font-size: 14px;
+    color: #c0c0c0;
+    line-height: 150%;      
+}
